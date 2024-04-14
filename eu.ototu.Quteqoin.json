@@ -1,7 +1,7 @@
 {
     "app-id": "eu.ototu.Quteqoin",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.14",
+    "runtime-version": "5.15-23.08",
     "sdk": "org.kde.Sdk",
     "command": "quteqoin",
     "rename-desktop-file": "quteqoin.desktop",
