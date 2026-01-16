@@ -1,0 +1,37 @@
+From bcdd3b415c9ee609e4c0e2d77ec9f0d9b937f0a5 Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Fri, 9 Jan 2026 11:52:39 +0300
+Subject: [PATCH] Fix appdata paper cuts
+
+---
+ eu.ototu.Quteqoin.metainfo.xml | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+
+diff --git a/eu.ototu.Quteqoin.metainfo.xml b/eu.ototu.Quteqoin.metainfo.xml
+index 5db26a9..af60331 100644
+--- a/eu.ototu.Quteqoin.metainfo.xml
++++ b/eu.ototu.Quteqoin.metainfo.xml
+@@ -4,14 +4,19 @@
+   <name>Quteqoin</name>
+   <summary>Desktop mouling agent</summary>
+   <url type="homepage">https://github.com/dguihal/quteqoin</url>
++  <url type="bugtracker">https://github.com/dguihal/quteqoin/issues</url>
++  <url type="vcs-browser">https://github.com/dguihal/quteqoin</url>
+   <launchable type="desktop-id">quteqoin.desktop</launchable>
+   <metadata_license>CC0-1.0</metadata_license>
+   <project_license>WTFPL</project_license>
++  <developer id="io.github.dguihal">
++      <name>Damien Guihal</name>
++  </developer>
+   <description><p>Tool based on Qt framework to allow effective mouling on bouchots.</p></description>
+   <releases>
+       <release version="v1.1.4" date="2018-06-21 23:32:05 +0200"/>
+   </releases>
+-  <content_rating type="oars-1.0">
++  <content_rating type="oars-1.1">
+       <content_attribute id="social-chat">intense</content_attribute>
+   </content_rating>
+   <screenshots>
+--
+libgit2 1.7.2
+

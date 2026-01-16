@@ -1,15 +1,16 @@
 {
     "app-id": "eu.ototu.Quteqoin",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.14",
+    "runtime-version": "5.15-25.08",
     "sdk": "org.kde.Sdk",
     "command": "quteqoin",
     "rename-desktop-file": "quteqoin.desktop",
     "rename-icon": "QuteQoin-Icon",
     "finish-args": [
-        "--socket=x11",
+        "--socket=fallback-x11",
         "--socket=wayland",
         "--device=dri",
+        "--share=ipc",
         "--share=network"
     ],
     "modules": [
@@ -20,7 +21,12 @@
                 {
                     "type": "git",
                     "url": "https://github.com/dguihal/quteqoin",
-                    "commit": "93ec959df9adf1bf79acf7b958d0fad1783b46e3"
+                    "tag": "v1.1.6",
+                    "commit": "fe7c9d62678c4bb6df37e4cb44505f4805a93614"
+                },
+                {
+                    "type": "patch",
+                    "path": "fix-appdata.patch"
                 }
             ]
         }
